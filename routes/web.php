@@ -33,6 +33,8 @@ Route::prefix('')->middleware('auth')->group(function(){
 
     Route::get('/lesson', 'LessonController@index')->name('lesson');
     Route::post('/lesson/store', 'LessonController@store')->name('lesson');
-
+    Route::post('/lesson/store', 'LessonController@store')->name('lesson');
 });
 
+
+Route::get('add-product', 'AddProductController@addProduct');
